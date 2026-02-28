@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballistic: Brick Breaker - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 28px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        p {
+            color: #c0c0c0;
+            margin-bottom: 16px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #a0a0a0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #606060;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .links {
+            margin-top: 16px;
+        }
+
+        .links a {
+            margin: 0 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🎯</div>
+            <h1>Ballistic: Brick Breaker</h1>
+            <p class="tagline">Aim, launch, and destroy in this addictive arcade game</p>
+        </header>
+
+        <section>
+            <h2>About the Game</h2>
+            <p>Ballistic is a modern take on the classic brick breaker genre. Launch balls to destroy blocks, collect power-ups, and chase high scores across multiple game modes.</p>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎮</div>
+                    <div class="feature-title">Multiple Modes</div>
+                    <div class="feature-desc">Classic, Blitz, Puzzle & more</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">Power-Ups</div>
+                    <div class="feature-desc">Fire, freeze, split & more</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">Customization</div>
+                    <div class="feature-desc">Skins, themes & effects</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <div class="feature-title">Leaderboards</div>
+                    <div class="feature-desc">Compete globally</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I restore my purchases?</p>
+                <p class="faq-answer">Go to Settings in the app and tap "Restore Purchases". Make sure you're signed in with the same Apple ID you used for the original purchase.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I remove ads?</p>
+                <p class="faq-answer">You can purchase the "Remove Ads" option from the Shop. This is a one-time purchase that permanently removes all banner and interstitial ads.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">My progress was lost. Can I recover it?</p>
+                <p class="faq-answer">Game progress is stored locally on your device. If you deleted the app or switched devices, progress cannot be recovered. We recommend keeping your device backed up.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How does the prestige system work?</p>
+                <p class="faq-answer">Once you reach a high enough lifetime score, you can prestige to reset your progress in exchange for permanent bonuses. Each prestige level gives you a 5% coin bonus.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Support</h2>
+            <p>Having issues or have suggestions? We'd love to hear from you!</p>
+            <p style="margin-bottom: 24px;">Please include your device model and iOS version when reporting bugs.</p>
+            <a href="mailto:guntergamesdev@gmail.com" class="contact-btn">Email Support</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gunter Games. All rights reserved.</p>
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
