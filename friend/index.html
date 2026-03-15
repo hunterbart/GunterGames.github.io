@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Friend in Ballistic</title>
+    <meta name="apple-itunes-app" content="app-id=6759799871">
+    <meta property="og:title" content="Add me as a friend in Ballistic!">
+    <meta property="og:description" content="Use this link to add me as a friend and compete on the leaderboard.">
+    <meta property="og:type" content="website">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 24px;
+            padding: 40px 32px;
+            max-width: 380px;
+            width: 90%;
+        }
+        .icon { font-size: 56px; margin-bottom: 16px; }
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .code {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin: 16px 0;
+            color: #00d4ff;
+            letter-spacing: 6px;
+            font-family: 'SF Mono', 'Menlo', monospace;
+        }
+        .subtitle {
+            font-size: 0.95rem;
+            color: #a0a0a0;
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102,126,234,0.4);
+        }
+        .sub { color: #606060; font-size: 0.85rem; margin-top: 16px; }
+    </style>
+    <script>
+        function getCode() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('code') || '';
+        }
+
+        function tryOpenApp() {
+            const code = getCode();
+            const deepLink = 'ballistic://friend?code=' + encodeURIComponent(code);
+            window.location.href = deepLink;
+            setTimeout(function() {
+                window.location.href = 'https://apps.apple.com/app/ballistic-brick-breaker/id6759799871';
+            }, 1500);
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const code = getCode();
+            document.getElementById('code').textContent = code || '------';
+        });
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">&#x1F91D;</div>
+        <h1>Add Friend in Ballistic</h1>
+        <div class="code" id="code">------</div>
+        <p class="subtitle">Enter this code in the app, or tap below to add automatically.</p>
+        <a href="javascript:tryOpenApp()" class="btn">Open in Ballistic</a>
+        <p class="sub">Opens the app, or the App Store if you don't have it.</p>
+    </div>
+</body>
+</html>
