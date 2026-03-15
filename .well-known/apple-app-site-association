@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7M7F2HDQQK.app.ballistic",
+        "paths": ["/challenge/*"]
+      }
+    ]
+  }
+}
